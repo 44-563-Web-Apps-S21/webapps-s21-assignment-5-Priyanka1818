@@ -10,6 +10,26 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="plants.html">Happy Plants</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="cat.html">Cat page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dog.html">Dog page</a>
+            </li>
+          
+          </ul>
+        </div>
+        </nav>
      <h1>Plants by Priyanka Thambabathula</h1>
 <div class="content">
     <div class="row">
@@ -31,14 +51,129 @@
 </div>
  <p>Reducing the size leads to reducing the size of plants names first and next     letters reducing </p>
  <div class="container">
-     <img scr="hackberry.jpg" width="400" height="300" class="img-fluid" alt="Responsive image">
-     <img scr="mahonia.png"  width="350" height="350" class="img-fluid" alt="Responsive image">
-     <img scr="Talinum.jpg"  width="300" height="250" class="img-fluid" alt="Responsive image">
+     <img src="images/hackberry.jpg" width="300" height="300" class="img-fluid" alt="Responsive image">
+     <img src="images/Mahonia.png"  width="500" height="500" class="img-fluid" alt="Responsive image">
+     <img src="images/Talinum.jpg"  width="300" height="300" class="img-fluid" alt="Responsive image">
      </div>
      <div class="container">
-        <img scr="hackberry.jpg" width="400" height="3500" class="img-thumbnail" alt="Responsive image">
-        <img scr="mahonia.png"  width="3500" height="300" class="img-thumbnail" alt="Responsive image">
-        <img scr="Talinum.jpg"  width="300" height="200" class="img-thumbnail" alt="Responsive image">
+        <img src="images/hackberry.jpg" width="300" height="300" class="img-thumbnail" alt="Responsive image">
+        <img src="images/Mahonia.png"  width="500" height="500" class="img-thumbnail" alt="Responsive image">
+        <img src="images/Talinum.jpg"  width="300" height="300" class="img-thumbnail" alt="Responsive image">
         </div>
-     </body>
+        <br>
+        <table class="table table-boardered">
+            <thread class="table-drak">
+                <tr>
+                    <th scope="col">LETTER</th>
+                    <th scope="col">PLANT</th>
+                    <th scope="col">CITY</th>
+                    <th scope="col">FOOD</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr class="bg-danger">
+                    <th scope="row">T</th>
+                    <td>TETRANEURIS</td>
+                    <td>TAICHUNG</td>
+                    <td>TACO</td>
+                </tr>
+                <tr class="bg-primary">
+                    <th scope="row">H</th>
+                    <td>HOSTA</td>
+                    <td>HAMBURG</td>
+                    <td>HONEY</td>
+                </tr>
+                <tr class="table-secondary">
+                    <th scope="row">A</th>
+                    <td>AECHMEA</td>
+                    <td>AGRA</td>
+                    <td>APPLES</td>
+                </tr>
+                <tr class="table-light">
+                    <th scope="row">M</th>
+                    <td>MAGNOLIA</td>
+                    <td>MADISON</td>
+                    <td>MEAT</td>
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">B</th>
+                    <td>BERGAMOT</td>
+                    <td>BARDHAMAN</td>
+                    <td>BANANAS</td>
+                </tr>
+                <tr class="table-secondary">
+                    <th scope="row">A</th>
+                    <td>ACALYPHA</td>
+                    <td>ABUJA</td>
+                    <td>ALMONDS</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn-success">T</button>
+                <button type="button" class="btn-success">H</button>
+                <button type="button" class="btn-success">A</button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <button type="button" class="btn-warning">M</button>
+                <button type="button" class="btn-warning">B</button>
+        </div>
+        <div class="btn-group mr-2" role="group" aria-label="Third group">
+            <button type="button" class="btn-danger">A</button>
+        </div>
+        </div>
+        <br>
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="cat.html">cat page</a>
+              <a class="dropdown-item" href="dog.html">dog page</a>
+            </div>
+          </div>
+          <br>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="InputPlant">Plant</label>
+                <input type="text" class="form-control" id="Inputplant" placeholder="Enter your plant">
+              </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div class="card-group">
+            <div class="card">
+              <img class="card-img-top" src= "images/hackberry.jpg" alt="hackberry">
+              <div class="card-body">
+                <h5 class="card-title">hackberry</h5>
+                <p class="card-text">Celtis occidentalis, commonly known as the common hackberry, is a large deciduous tree native to North America. It is also known as the nettletree, sugarberry, beaverwood, northern hackberry, and American hackberry. It is a moderately long-lived hardwood with a light-colored wood, yellowish gray to light brown with yellow streaks.</p>
+                <a href="https://en.wikipedia.org/wiki/Celtis_occidentalis" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="images/Mahonia.png" alt="Mahonia">
+              <div class="card-body">
+                <h5 class="card-title">Mahonia</h5>
+                <p class="card-text">Mahonia is a genus of approximately 70 species of evergreen shrubs and, rarely, small trees in the family Berberidaceae, native to eastern Asia, the Himalaya, North and Central America. They are closely related to the genus Berberis and botanists disagree on whether to recognize a separate Mahonia. Many botanists prefer to classify Mahonia as a part of Berberis because several species in both genera are able to hybridize, and because there are no consistent morphological differences between the two groups other than the leaf pinnation </p>
+                <a href="https://en.wikipedia.org/wiki/Mahonia" class="btn btn-primary">Read more</a>
+              </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="images/Talinum.jpg" alt="Talinum" >
+            <div class="card-body">
+              <h5 class="card-title">Talinum</h5>
+              <p class="card-text">Talinum is a genus of herbaceous succulent plants in the family Talinaceae (formerly in the family Portulacaceae) whose common names include fameflower and flameflower. Several species bear edible leaves, and Talinum fruticosum is widely grown in tropical regions as a leaf vegetable. Talinum paniculatum is grown as an ornamental plant.</p>
+              <a href="https://en.wikipedia.org/wiki/Talinum" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+    </body>
 </html>
